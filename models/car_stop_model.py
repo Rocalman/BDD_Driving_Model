@@ -36,7 +36,7 @@ tf.app.flags.DEFINE_string('sub_arch_selection', 'car_stop',
                            available archs are car_stop, car_discrete, car_continuous""")
 
 
-tf.app.flags.DEFINE_string('pretrained_model_path', './data/tf.caffenet.bin',
+tf.app.flags.DEFINE_string('pretrained_model_path', '/data/wp/code/BDD_Driving_Model/data/tf.caffenet.bin',
                            """The pretrained model weights""")
 
 tf.app.flags.DEFINE_string('lstm_hidden_units', "256,256",

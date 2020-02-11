@@ -9,8 +9,10 @@ import tensorflow as tf
 FLAGS = tf.app.flags.FLAGS
 
 ############################Set those path before use###################################
-FLAGS.pretrained_model_path = "/data/yang/si/data/pretrained_models/tf.caffenet.bin"
-FLAGS.data_dir = "/data/yang_cache/tfrecord_release/tfrecords"
+# FLAGS.pretrained_model_path = "/data/yang/si/data/pretrained_models/tf.caffenet.bin"
+FLAGS.pretrained_model_path = "/data/wp/code/BDD_Driving_Model/data/tf.caffenet.bin"
+# FLAGS.data_dir = "/data/yang_cache/tfrecord_release/tfrecords"
+FLAGS.data_dir = "/data/wp/Data/BDD_data/tfrecords"
 
 # for privilege training: segmentation image index and labels
 train_city_image_list = '/backup/BDDNexar/Harry_config/Color_train_harry.txt'

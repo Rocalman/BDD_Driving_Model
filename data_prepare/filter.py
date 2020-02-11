@@ -26,8 +26,14 @@ if __name__ == '__main__':
     dataset_path = sys.argv[1]
     output_index = os.path.join(dataset_path, "video_filtered_38_60.txt")
 
-    info_path = os.path.join(dataset_path, "info")
-    video_path = os.path.join(dataset_path, "videos")
+    # info_path = os.path.join(dataset_path, "info")
+    # video_path = os.path.join(dataset_path, "videos")
+
+    # info_path = "/data/wp/Data/BDD_data/bdd100k/info/100k/val/"
+    # video_path = "/data/wp/Data/BDD_data/bdd100k/videos/val/"
+
+    info_path = "/data/wp/Data/BDD_data/bdd100k/info/100k/train"
+    video_path = "/data/wp/Data/BDD_data/bdd100k/videos/train"
 
     count = 0
 

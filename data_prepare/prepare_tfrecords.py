@@ -18,7 +18,7 @@ import cProfile
 import time
 import cv2
 import scipy.ndimage
-import skimage
+# import skimage
 from scipy.misc import imresize
 import matplotlib
 import StringIO
@@ -122,7 +122,7 @@ def read_one_video(video_path, jobid):
     ratio = False
 
     # save the speed field
-    json_path = os.path.join(os.path.dirname(fd), "info", fprefix+".json")
+    json_path = os.path.join(os.path.dirname(os.path.dirname(fd)), "info", "100k/train", fprefix+".json")
     speeds = get_interpolated_speed(json_path, fprefix+".mov", hz_res)
     if speeds is None:
         # if speed is none, the error message is printed in other functions
